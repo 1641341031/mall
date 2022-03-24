@@ -1,6 +1,5 @@
 package com.tiger.mall.service;
 
-import com.tiger.mall.mapper.HrMapper;
 import com.tiger.mall.model.Hr;
 import org.springframework.stereotype.Service;
 

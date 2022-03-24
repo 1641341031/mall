@@ -32,14 +32,14 @@
             <property name="nullCatalogMeansCurrent" value="true" />
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="com.tiger.mall.model" targetProject="vhr-mbg\src\main\java"/>
+        <javaModelGenerator targetPackage="com.tiger.mall.model" targetProject="mall-mbg\src\main\java"/>
 
-        <sqlMapGenerator targetPackage="com.tiger.mall.mapper" targetProject="vhr-mbg\src\main\resources"/>
+        <sqlMapGenerator targetPackage="com.tiger.mall.mapper" targetProject="mall-mbg\src\main\resources"/>
 
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.tiger.mall.mapper"
-                             targetProject="vhr-mbg\src\main\java"/>
+                             targetProject="mall-mbg\src\main\java"/>
         <!--生成全部表tableName设为%-->
-        <table tableName="hr">
+        <table tableName="%">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
     </context>
