@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mall.iml" filepath="$PROJECT_DIR$/mall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-common/mall-common.iml" filepath="$PROJECT_DIR$/mall-common/mall-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-mbg/mall-mbg.iml" filepath="$PROJECT_DIR$/mall-mbg/mall-mbg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-security/mall-security.iml" filepath="$PROJECT_DIR$/mall-security/mall-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-web/mall-web.iml" filepath="$PROJECT_DIR$/mall-web/mall-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vhr.iml" filepath="$PROJECT_DIR$/vhr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vhr-common/vhr-common.iml" filepath="$PROJECT_DIR$/vhr-common/vhr-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vhr-mbg/vhr-mbg.iml" filepath="$PROJECT_DIR$/vhr-mbg/vhr-mbg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vhr-web/vhr-web.iml" filepath="$PROJECT_DIR$/vhr-web/vhr-web.iml" />
+    </modules>
+  </component>
+</project>

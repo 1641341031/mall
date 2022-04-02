@@ -17,6 +17,11 @@
             <groupId>com.tiger</groupId>
             <artifactId>mall-mbg</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.tiger</groupId>
+            <artifactId>mall-security</artifactId>
+        </dependency>
     </dependencies>
 
 
