@@ -5,6 +5,7 @@ import com.tiger.mall.security.component.DynamicSecurityService;
 import com.tiger.mall.security.config.SecurityConfig;
 import com.tiger.mall.service.UmsAdminService;
 //import com.tiger.mall.service.UmsResourceService;
+import com.tiger.mall.service.UmsResourceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,8 +27,8 @@ import java.util.concurrent.ConcurrentHashMap;
 public class MallSecurityConfig extends SecurityConfig {
     @Autowired
     private UmsAdminService adminService;
-//    @Autowired
-//    private UmsResourceService resourceService;
+    @Autowired
+    private UmsResourceService resourceService;
 
     @Bean
     public UserDetailsService userDetailsService() {
@@ -40,13 +41,12 @@ public class MallSecurityConfig extends SecurityConfig {
         return new DynamicSecurityService() {
             @Override
             public Map<String, ConfigAttribute> loadDataSource() {
-//                Map<String, ConfigAttribute> map = new ConcurrentHashMap<>();
-//                List<UmsResource> resourceList = resourceService.listAll();
-//                for (UmsResource resource : resourceList) {
-//                    map.put(resource.getUrl(), new org.springframework.security.access.SecurityConfig(resource.getId() + ":" + resource.getName()));
-//                }
-//                return map;
-                return null;
+                Map<String, ConfigAttribute> map = new ConcurrentHashMap<>();
+                List<UmsResource> resourceList = resourceService.listAll();
+                for (UmsResource resource : resourceList) {
+                    map.put(resource.getUrl(), new org.springframework.security.access.SecurityConfig(resource.getId() + ":" + resource.getName()));
+                }
+                return map;
             }
         };
     }
