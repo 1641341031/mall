@@ -8,9 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="vhr-common" />
+        <module name="mall-mbg" />
         <module name="vhr-web" />
         <module name="mall-security" />
-        <module name="mall-mbg" />
         <module name="mall-common" />
         <module name="vhr-mbg" />
         <module name="mall-web" />
@@ -23,7 +23,6 @@
       <module name="mall-security" target="1.8" />
       <module name="mall-web" target="1.8" />
       <module name="vhr" target="1.8" />
-      <module name="vhr-admin" target="1.8" />
       <module name="vhr-common" target="1.8" />
       <module name="vhr-mbg" target="1.8" />
       <module name="vhr-web" target="1.8" />
@@ -36,7 +35,6 @@
       <module name="mall-security" options="-parameters" />
       <module name="mall-web" options="-parameters" />
       <module name="vhr" options="" />
-      <module name="vhr-admin" options="-parameters" />
       <module name="vhr-common" options="-parameters" />
       <module name="vhr-mbg" options="-parameters" />
       <module name="vhr-web" options="-parameters" />
